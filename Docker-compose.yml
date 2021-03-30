@@ -1,0 +1,23 @@
+docker-compose.yml
+
+version: '2' 
+services:
+  Mysql1:	   
+    image: mysqlcont1
+    build: .
+    ports: 
+      - "6060:6060"     
+  
+  Mysql2:
+    image: mysqlcont2
+    build: .
+    ports: 
+      - "6070:6070"   
+  
+  Mysql3:
+    image: mysqlcont3
+    build: .
+    ports: 
+- "6080:6080"
+
+
